@@ -1,5 +1,6 @@
 import random
 
+
 class enemy:
     def __init__(self, name):
         self.name = name
@@ -19,18 +20,17 @@ class enemy:
 
 def encounter(monster):
     monster = enemy(monster)
+    # Urban Residents
     if monster.name == "Cockroach":
-        monster.DEFpierce = 1
         monster.attack = 1 + random.randint(1, 3)
         monster.health = 5 + random.randint(1, 3)
         monster.exp = 1
-        monster.author = "Chia Inventory#9520" #
+        monster.author = "Chia Inventory#9520"  #
         monster.description = "A house pest common in urban area"
         monster.skill = "rush"
         monster.attack_name = "bite"
 
     if monster.name == "Mouse":
-        monster.DEFpierce = 1
         monster.attack = 1 + random.randint(1, 3)
         monster.health = 10 + random.randint(1, 5)
         monster.exp = 1
@@ -38,6 +38,58 @@ def encounter(monster):
         monster.description = "A house pest common in urban area"
         monster.skill = "rush"
         monster.attack_name = "bite"
+
+    if monster.name == "Drunk Man":
+        monster.attack = 1 + random.randint(1, 3)
+        monster.health = 20 + random.randint(1, 5)
+        monster.exp = 1
+        monster.coin = 1
+        monster.author = "Chia Inventory#9520"
+        monster.description = "Drunk men can always be observed in the tavern"
+        monster.skill = "broken wine bottle"
+        monster.attack_name = "punch"
+
+    if monster.name == "Thief":
+        monster.attack = 3 + random.randint(1, 3)
+        monster.health = 10 + random.randint(1, 5)
+        monster.exp = 1
+        monster.coin = 1
+        monster.author = "Chia Inventory#9520"
+        monster.description = "Thieves can always be observed in the market"
+        monster.skill = "dagger"
+        monster.attack_name = "punch"
+
+    if monster.name == "Scum":
+        monster.attack = 2 + random.randint(1, 3)
+        monster.health = 15 + random.randint(1, 5)
+        monster.exp = 1
+        monster.coin = 1
+        monster.author = "Chia Inventory#9520"
+        monster.description = "Scums can always be found in the city"
+        monster.skill = "dagger"
+        monster.attack_name = "punch"
+
+    if monster.name == "Gate Guard":
+        monster.attack = 3 + random.randint(1, 3)
+        monster.health = 50 + random.randint(1, 5)
+        monster.exp = 1
+        monster.coin = 3
+        monster.author = "Chia Inventory#9520"
+        monster.description = "He is stationed ahead of the gate"
+        monster.skill = "sword"
+        monster.attack_name = "punch"
+
+    # Slimes
+    if monster.name == "Slime":
+        monster.DEFpierce = 1
+        monster.attack = 1 + random.randint(1, 5)
+        monster.coin = 1
+        monster.health = 15 + random.randint(1, 5)
+        monster.exp = 1
+        monster.author = "Chia Inventory#9520"
+        monster.description = "A normal slime"
+        monster.skill = "rush"
+        monster.attack_name = "bump"
 
     if monster.name == "Forest Slime":
         monster.DEFpierce = 1
@@ -74,7 +126,8 @@ def encounter(monster):
         monster.description = "A slime adapts swamp environment"
         monster.skill = "acid eruption"
         monster.attack_name = "bump"
-        
+
+    # Murloc
     if monster.name == "Murloc Grunt":
         monster.DEFslash = 1
         monster.DEFbash = 0
@@ -113,7 +166,8 @@ def encounter(monster):
         monster.description = "A murloc king adapts aquatic environment. Lives on the Continent of Aquarum"
         monster.skill = "trident fury"
         monster.attack_name = "flesh slash mrglwglwlg"
-       
+
+    # Graveyard Residents
     if monster.name == "Skeleton Warrior":
         monster.DEFslash = 1
         monster.DEFbash = 1
@@ -178,7 +232,7 @@ def encounter(monster):
         monster.description = "A ghost adapts graveyard environment"
         monster.skill = "fear"
         monster.attack_name = "scare"
-        
+
     if monster.name == "Bat":
         monster.DEFslash = 1
         monster.DEFbash = 1
@@ -192,6 +246,7 @@ def encounter(monster):
         monster.skill = "echo"
         monster.attack_name = "suck"
 
+    # Dark Forest Residents
     if monster.name == "Sleepy Bear":
         monster.DEFslash = 1
         monster.DEFbash = 2
@@ -218,7 +273,7 @@ def encounter(monster):
         monster.skill = "howl"
         monster.attack_name = "bite"
 
-    if monster.name == "Thief":
+    if monster.name == "Forest Thief":
         monster.DEFslash = 1
         monster.DEFbash = 1
         monster.DEFpierce = 0
@@ -231,7 +286,7 @@ def encounter(monster):
         monster.skill = "sneaky"
         monster.attack_name = "backstab"
 
-    if monster.name == "Corrupted living tree":
+    if monster.name == "Corrupted Living Tree":
         monster.DEFslash = 0
         monster.DEFbash = 1
         monster.DEFpierce = 1
@@ -243,8 +298,8 @@ def encounter(monster):
         monster.description = "A corrupted living tree adapts dark woods environment"
         monster.skill = "grab"
         monster.attack_name = "squeeze"
-        
-    if monster.name == "Crazy witch":
+
+    if monster.name == "Crazy Witch":
         monster.DEFslash = 1
         monster.DEFbash = 1
         monster.DEFpierce = 1
@@ -256,7 +311,7 @@ def encounter(monster):
         monster.description = "A crazy witch adapts dark woods environment"
         monster.skill = "witchcraft"
         monster.attack_name = "curse"
-        
+
     if monster.name == "Poisonous Fungus":
         monster.DEFslash = 0
         monster.DEFbash = 0
@@ -270,6 +325,7 @@ def encounter(monster):
         monster.skill = "poison cloud"
         monster.attack_name = "poison"
 
+    # Naga
     if monster.name == "Naga warrior":
         monster.DEFslash = 1
         monster.DEFbash = 1
@@ -309,6 +365,7 @@ def encounter(monster):
         monster.skill = "screech"
         monster.attack_name = "eardrums blow"
 
+    # Beach Residents
     if monster.name == "Red Crab":
         monster.DEFslash = 2
         monster.DEFbash = 1
@@ -335,8 +392,8 @@ def encounter(monster):
         monster.skill = "my precious"
         monster.attack_name = "splinter"
 
-    #Continent - Harenae Desert
-    #Fire creature - would be weak to water / ice attack strong against fire
+    # Continent - Harenae Desert
+    # Fire creature - would be weak to water / ice attack strong against fire
     if monster.name == "Scorpion":
         monster.DEFslash = 2
         monster.DEFbash = 1
@@ -363,8 +420,8 @@ def encounter(monster):
         monster.skill = "rush"
         monster.attack_name = "bite"
 
-    #Earth Creature
-    #Would be weak to fire magic
+    # Earth Creature
+    # Would be weak to fire magic
     if monster.name == "Living Cactus":
         monster.DEFslash = 0
         monster.DEFbash = 2
@@ -396,7 +453,7 @@ def encounter(monster):
         monster.skill = "fireball"
         monster.attack_name = "burn"
 
-    #Would be extremely weak against fire
+    # Would be extremely weak against fire
     if monster.name == "Earth Elemental":
         monster.DEFslash = 3
         monster.DEFbash = 3
@@ -410,7 +467,7 @@ def encounter(monster):
         monster.skill = "throw rocks"
         monster.attack_name = "bash"
 
-    #Would be extremely weak against earth
+    # Would be extremely weak against earth
     if monster.name == "Air Elemental":
         monster.DEFslash = 3
         monster.DEFbash = 3
@@ -424,7 +481,7 @@ def encounter(monster):
         monster.skill = "tornado"
         monster.attack_name = "zap"
 
-    #Would be extremely weak against air / electro
+    # Would be extremely weak against air / electro
     if monster.name == "Water Elemental":
         monster.DEFslash = 3
         monster.DEFbash = 3
@@ -454,8 +511,7 @@ def encounter(monster):
         monster.skill = "dash"
         monster.attack_name = "claw"
 
-
-    #Glacies - the ice lands
+    # Glacies - the ice lands
     # Ice / Water Creature
     # Would be weak against air / electro
     if monster.name == "Ice Wolf":
@@ -471,7 +527,7 @@ def encounter(monster):
         monster.skill = "ice breath"
         monster.attack_name = "bite"
 
-    #Would be weak against Air (electro)
+    # Would be weak against Air (electro)
     if monster.name == "Yeti":
         monster.DEFslash = 1
         monster.DEFbash = 3
@@ -485,7 +541,7 @@ def encounter(monster):
         monster.skill = "throw chunks of ice"
         monster.attack_name = "bash"
 
-    #Would be weak against Air (electro)
+    # Would be weak against Air (electro)
     if monster.name == "Ice Crab":
         monster.DEFslash = 3
         monster.DEFbash = 1
@@ -509,11 +565,10 @@ def encounter(monster):
         monster.exp = 6
         monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
         monster.description = "Looks like an ordinary treasure chest, but has teeth as sharp as a shark. Snaps unsuspecting adventurers. Lives at haunted places"
-        monster.skill = "sleeping gas" #Character cannot attack for one round
+        monster.skill = "sleeping gas"  # Character cannot attack for one round
         monster.attack_name = "snap shut"
 
-
-    #Would be weak against fire
+    # Would be weak against fire
     if monster.name == "Mimic Book":
         monster.DEFslash = 0
         monster.DEFbash = 2
@@ -524,8 +579,7 @@ def encounter(monster):
         monster.exp = 6
         monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
         monster.description = "Looks like an ordinary book, but spells magic against unsuspecting adventurers."
-        monster.skill = "fireball" #Character cannot attack for one round
+        monster.skill = "fireball"  # Character cannot attack for one round
         monster.attack_name = "lightning spell"
 
-            
     return (monster)
