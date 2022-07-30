@@ -102,17 +102,6 @@ def encounter(monster):
         monster.skill = "rush"
         monster.attack_name = "bump"
 
-    if monster.name == "Forest Slime":
-        monster.DEFpierce = 1
-        monster.attack = 1 + random.randint(1, 5)
-        monster.coin = 1
-        monster.health = 20 + random.randint(1, 5)
-        monster.exp = 1
-        monster.author = "Chia Inventory#9520"
-        monster.description = "A slime adapts forest environment"
-        monster.skill = "rush"
-        monster.attack_name = "bump"
-
     if monster.name == "Aquatic Slime":
         monster.DEFslash = 1
         monster.DEFpierce = 1
