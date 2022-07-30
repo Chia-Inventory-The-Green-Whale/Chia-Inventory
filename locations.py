@@ -17,7 +17,7 @@ def locate(location):
     here = room(location)
     if here.location == 'Kingdom Street':
         here.description = "Location: Kingdom Street; This place is bustling with people. \nYou noticed following exits: east (East Kingdom Street), north (Tavern), south (Marketplace)"
-        here.monsters = ['Cockroach']*5 + ['Mouse'*5]
+        here.monsters = ['Cockroach']*5 + ['Mouse']*5
         here.east = 'East Kingdom Street'
         here.north = 'Tavern'
         here.south = 'Marketplace'
