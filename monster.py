@@ -392,4 +392,194 @@ def encounter(monster):
         monster.skill = "my precious"
         monster.attack_name = "splinter"
 
+    # Continent - Harenae Desert
+    # Fire creature - would be weak to water / ice attack strong against fire
+    if monster.name == "Scorpion":
+        monster.DEFslash = 2
+        monster.DEFbash = 1
+        monster.DEFpierce = 2
+        monster.attack = 5 + random.randint(1, 5)
+        monster.coin = 4
+        monster.health = 40 + random.randint(1, 5)
+        monster.exp = 4
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "A oversized Scorpion. Living in the deserts of Harenae"
+        monster.skill = "poison"
+        monster.attack_name = "pierce"
+
+    if monster.name == "Rabid Hyena":
+        monster.DEFslash = 0
+        monster.DEFbash = 1
+        monster.DEFpierce = 0
+        monster.attack = 6 + random.randint(2, 7)
+        monster.coin = 6
+        monster.health = 60 + random.randint(1, 5)
+        monster.exp = 5
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "A Rabid Hyena laughs madly at the adventurers. Living in the deserts of Harenae"
+        monster.skill = "rush"
+        monster.attack_name = "bite"
+
+    # Earth Creature
+    # Would be weak to fire magic
+    if monster.name == "Living Cactus":
+        monster.DEFslash = 0
+        monster.DEFbash = 2
+        monster.DEFpierce = 1
+        monster.attack = 0 + random.randint(1, 20)
+        monster.coin = 6
+        monster.health = 40 + random.randint(1, 5)
+        monster.exp = 7
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "A haunted cactus came to life by imbalance of nature. Living in the deserts of Harenae"
+        monster.skill = "shoot needles"
+        monster.attack_name = "pierce"
+
+    # If Elementary mage system is implemented
+    # Would have strong def against fire
+    # Would be weak against water
+    # Other magic would be neutral
+    # Has strong physical defense
+    if monster.name == "Fire Elemental":
+        monster.DEFslash = 3
+        monster.DEFbash = 3
+        monster.DEFpierce = 3
+        monster.attack = 5 + random.randint(3, 15)
+        monster.coin = 20
+        monster.health = 60 + random.randint(1, 20)
+        monster.exp = 10
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "Elements of fire are out of control. This monster glides on a flame over the lands. It has two montrous arms and a head. Living in the deserts of Harenae and at hot and volcaneous places."
+        monster.skill = "fireball"
+        monster.attack_name = "burn"
+
+    # Would be extremely weak against fire
+    if monster.name == "Earth Elemental":
+        monster.DEFslash = 3
+        monster.DEFbash = 3
+        monster.DEFpierce = 3
+        monster.attack = 15 + random.randint(3, 5)
+        monster.coin = 20
+        monster.health = 80 + random.randint(1, 10)
+        monster.exp = 10
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "Elements of earth are out of control. This monster is made out of rock. Every step of it make the earth shake. It throws rocks with it monstrous arms. Living in the deepest nature of Salvia Continent."
+        monster.skill = "throw rocks"
+        monster.attack_name = "bash"
+
+    # Would be extremely weak against earth
+    if monster.name == "Air Elemental":
+        monster.DEFslash = 3
+        monster.DEFbash = 3
+        monster.DEFpierce = 3
+        monster.attack = 5 + random.randint(3, 15)
+        monster.coin = 20
+        monster.health = 60 + random.randint(1, 20)
+        monster.exp = 10
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "Elements of air are out of control. This monster glides on a tornado out of dust. Electric lighning flashes through the body of this monster. Unprepared adventurers will be zapped to death. Living in the deepest nature of Salvia Continent."
+        monster.skill = "tornado"
+        monster.attack_name = "zap"
+
+    # Would be extremely weak against air / electro
+    if monster.name == "Water Elemental":
+        monster.DEFslash = 3
+        monster.DEFbash = 3
+        monster.DEFpierce = 3
+        monster.attack = 8 + random.randint(1, 5)
+        monster.coin = 20
+        monster.health = 60 + random.randint(1, 20)
+        monster.exp = 10
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "Elements of water are out of control. This monster is a gigantic gliding water drop with ice crystals circling above it's head. Weak adventurers will be drowned or frozen"
+        monster.skill = "freeze"
+        monster.attack_name = "splash"
+
+    # Air Creature
+    # Would be weak against Earth attacks
+    # High possibility to dodge
+    if monster.name == "Griffin":
+        monster.DEFslash = 1
+        monster.DEFbash = 1
+        monster.DEFpierce = 0
+        monster.attack = 3 + random.randint(2, 10)
+        monster.coin = 5
+        monster.health = 40 + random.randint(1, 5)
+        monster.exp = 4
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "A mythical creature with the head and wings of an eagle. Living in Mountain areas"
+        monster.skill = "dash"
+        monster.attack_name = "claw"
+
+    # Glacies - the ice lands
+    # Ice / Water Creature
+    # Would be weak against air / electro
+    if monster.name == "Ice Wolf":
+        monster.DEFslash = 1
+        monster.DEFbash = 2
+        monster.DEFpierce = 1
+        monster.attack = 6 + random.randint(1, 8)
+        monster.coin = 6
+        monster.health = 60 + random.randint(1, 5)
+        monster.exp = 6
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "A mystical wolf living in the cold ice of Glacies"
+        monster.skill = "ice breath"
+        monster.attack_name = "bite"
+
+    # Would be weak against Air (electro)
+    if monster.name == "Yeti":
+        monster.DEFslash = 1
+        monster.DEFbash = 3
+        monster.DEFpierce = 1
+        monster.attack = 8 + random.randint(1, 10)
+        monster.coin = 6
+        monster.health = 100 + random.randint(1, 20)
+        monster.exp = 15
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "A big yeti lifing in the cold ice of Glacies"
+        monster.skill = "throw chunks of ice"
+        monster.attack_name = "bash"
+
+    # Would be weak against Air (electro)
+    if monster.name == "Ice Crab":
+        monster.DEFslash = 3
+        monster.DEFbash = 1
+        monster.DEFpierce = 2
+        monster.attack = 5 + random.randint(1, 8)
+        monster.coin = 3
+        monster.health = 70 + random.randint(1, 10)
+        monster.exp = 5
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "A ice crab living on icy shores"
+        monster.skill = "icy jet of water"
+        monster.attack_name = "pinch"
+
+    if monster.name == "Mimic Chest":
+        monster.DEFslash = 2
+        monster.DEFbash = 0
+        monster.DEFpierce = 2
+        monster.attack = 0 + random.randint(1, 15)
+        monster.coin = 1 + random.randint(1, 20)
+        monster.health = 50 + random.randint(1, 10)
+        monster.exp = 6
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "Looks like an ordinary treasure chest, but has teeth as sharp as a shark. Snaps unsuspecting adventurers. Lives at haunted places"
+        monster.skill = "sleeping gas"  # Character cannot attack for one round
+        monster.attack_name = "snap shut"
+
+    # Would be weak against fire
+    if monster.name == "Mimic Book":
+        monster.DEFslash = 0
+        monster.DEFbash = 2
+        monster.DEFpierce = 1
+        monster.attack = 5 + random.randint(1, 10)
+        monster.coin = 1 + random.randint(1, 20)
+        monster.health = 40 + random.randint(1, 10)
+        monster.exp = 6
+        monster.author = "Da8erRul85#2286 xch1fvk9fn4jlvpgsyy7sz0akyuqyvvefcltnhzmrkxkukzrckd3fdmq08lgy0"
+        monster.description = "Looks like an ordinary book, but spells magic against unsuspecting adventurers."
+        monster.skill = "fireball"  # Character cannot attack for one round
+        monster.attack_name = "lightning spell"
+
     return (monster)
