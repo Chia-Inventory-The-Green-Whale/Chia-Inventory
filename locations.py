@@ -54,12 +54,14 @@ def locate(location):
         here.description = "Location: Stable; Adventurers gathered here for mounts, such as deers. \nYou noticed following exits: north (East Kingdom Street)"
         here.monsters = ['Cockroach']*10 + ['Mouse']*10 + ['City Guard']*1
         here.north = 'East Kingdom Street'
+        here.area_type = "City"
 
     if here.location == 'Gate of Viridis':
         here.description = "Location: Gate of Viridis. \nYou noticed following exits: west (East Kingdom Street), east (Border of Slime Forest)"
         here.monsters = ['Cockroach']*5 + ['Mouse']*4 + ['City Guard']*1
         here.east = 'Border of Slime Forest'
         here.west = 'East Kingdom Street'
+        here.area_type = "City"
 
     if here.location == 'Border of Slime Forest':
         here.description = "Location: Border of Slime Forest; You entered the forest. \nYou noticed following exits: west (Gate of Viridis), east (Slime Forest)"
