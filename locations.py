@@ -24,13 +24,13 @@ def locate(location):
         here.area_type = "City"
 
     if here.location == 'Tavern':
-        here.description = "Location: Tavern. \nYou noticed following exits: south (Kingdom Street)"
+        here.description = "Location: Tavern.\nYou talk to the innkeeper. He says \"Stay here for a while and get some rest.\" \nYou noticed following exits: south (Kingdom Street)"
         here.monsters = ['Cockroach']*14 + ['Mouse']*4 + ['Drunk Man']*2 + ['City Guard']*1
         here.south = 'Kingdom Street'
         here.area_type = "City"
 
     if here.location == 'Marketplace':
-        here.description = "Location: Marketplace; This place is bustling with people. \nYou noticed following exits: north (Kingdom Street)"
+        here.description = "Location: Marketplace; This place is bustling with people.\nMaybe you want to go to the blue duck\nhttps://shorturl.at/agnQR\nYou noticed following exits: north (Kingdom Street)"
         here.monsters = ['Cockroach']*10 + ['Mouse']*4 + ['Thief']*4 + ['Scum']*2 + ['City Guard']*1
         here.north = 'Kingdom Street'
         here.area_type = "City"
@@ -45,7 +45,7 @@ def locate(location):
         here.area_type = "City"
 
     if here.location == 'Blacksmith Shop':
-        here.description = "Location: Blacksmith Shop; Adventurers gathered here for equipments. \nYou noticed following exits: south (East Kingdom Street)"
+        here.description = "Location: Blacksmith Shop; Adventurers gathered here for equipments.\nat the moment the blacksmith is out for travelling.\nWhen he is back you can get some fair equipment here \nYou noticed following exits: south (East Kingdom Street)"
         here.monsters = ['Mouse'] + ['City Guard']*1
         here.south = 'East Kingdom Street'
         here.area_type = "City"
