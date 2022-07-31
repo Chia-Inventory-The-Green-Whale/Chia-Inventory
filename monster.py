@@ -69,13 +69,13 @@ def encounter(monster):
         monster.skill = "dagger"
         monster.attack_name = "punch"
 
-    if monster.name == "Gate Guard":
-        monster.attack = 3 + random.randint(1, 3)
-        monster.health = 50 + random.randint(1, 5)
+    if monster.name == "City Guard":
+        monster.attack = 5 + random.randint(1, 3)
+        monster.health = 120 + random.randint(1, 5)
         monster.exp = 1
         monster.coin = 3
         monster.author = "Chia Inventory#9520"
-        monster.description = "He is stationed ahead of the gate"
+        monster.description = "The guard is stationed here, he said: hunting is not permitted!"
         monster.skill = "sword"
         monster.attack_name = "punch"
 
