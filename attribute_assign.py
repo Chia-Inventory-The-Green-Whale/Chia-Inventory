@@ -56,17 +56,32 @@ def assign_attribute(stats):
         stats.health = stats.health + random.randint(1, 5)
     if stats.herb in Powerful_Brave_Seedling_list:
         stats.health = stats.health + random.randint(1, 5)
-    if stats.familiar in Chia_Slime_list:
-        stats.str = stats.str + random.randint(1, 5) - random.randint(1, 5)
-        stats.dex = stats.dex + random.randint(1, 5) - random.randint(1, 5)
-        stats.int = stats.int + random.randint(1, 5) - random.randint(1, 5)
-        stats.wis = stats.wis + random.randint(1, 5) - random.randint(1, 5)
-        stats.cha = stats.cha + random.randint(1, 5) - random.randint(1, 5)
-        stats.luc = stats.luc + random.randint(1, 5) - random.randint(1, 5)
+    if stats.familiar in Red_Chia_Slime_list:
+	    stats.str = stats.str + 1
+	    stats.int = stats.int - 1
+    if stats.familiar in Blue_Chia_Slime_list:
+	    stats.int = stats.int + 1
+	    stats.str = stats.str - 1
+    if stats.familiar in Green_Chia_Slime_list:
+	    stats.dex = stats.dex + 1
+	    stats.con = stats.con - 1
+    if stats.familiar in Orange_Chia_Slime_list:
+	    stats.con = stats.con + 1
+	    stats.dex = stats.dex - 1
+    if stats.familiar in Yellow_Chia_Slime_list:
+	    stats.cha = stats.cha + 1
+	    stats.wis = stats.wis - 1
+    if stats.familiar in Purple_Chia_Slime_list:
+	    stats.wis = stats.wis + 1
+	    stats.cha = stats.cha - 1
     if stats.familiar in Healing_Chia_Slime_list:
-        stats.health = stats.health + random.randint(1, 5)
+	    Healing_castchance = random.randint(1, 20)
+	    if Healing_castchance in [17, 18, 19, 20]:
+		    stats.health = stats.health + random.randint(2, 4)
     if stats.familiar in Identify_Chia_Slime_list:
-        stats.int = stats.int + random.randint(1, 5)
+	    Identify_castchance = random.randint(1, 20)
+	    if Identify_castchance in [17, 18, 19, 20]:
+		    stats.int = stats.int + random.randint(2, 4)
     if stats.familiar in Snail_List:
         stats.dex = stats.dex - random.randint(1, 5)
         stats.luc = stats.luc + random.randint(1, 5)
