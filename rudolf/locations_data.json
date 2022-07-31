@@ -1,6 +1,7 @@
 {
     "locations":{
         "Kingdom Street":{
+            "comment" : "JSON per definition allows no comments. But you could do things like i do here",
             "description" : "Location: Kingdom Street; This place is bustling with people. \nYou noticed following exits: east (East Kingdom Street), north (Tavern), south (Marketplace)",
             "monsters" : [
                 {
