@@ -22,6 +22,7 @@ def locate(location):
         ldat=data['locations'][location]
         here = room(location)
         here.description = ldat['description']
+        #TODO should be able to write this shorter. iterate through all simple strings ['east','north','area_type'] and so on
         if "east" in ldat:
             here.east = ldat['east']
         if "north" in ldat:
