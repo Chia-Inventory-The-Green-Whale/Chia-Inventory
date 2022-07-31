@@ -34,7 +34,7 @@ def locate(location):
             here.area_type = ldat['area_type']
         if "monsters" in ldat:
             for monster in ldat['monsters']:
-                for i in range(monster['multiplier']):
+                for i in range(monster['count']):
                     here.monsters.append(monster['name'])
     return here
 
