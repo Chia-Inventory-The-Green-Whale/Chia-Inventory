@@ -1,0 +1,54 @@
+{
+    "locations":{
+        "Kingdom Street":{
+            "description" : "Location: Kingdom Street; This place is bustling with people. \nYou noticed following exits: east (East Kingdom Street), north (Tavern), south (Marketplace)",
+            "monsters" : [
+                {
+                    "name": "Cockroach",
+                    "multiplier": 10
+                },
+                {
+                    "name": "Mouse",
+                    "multiplier": 10
+                },
+                {
+                    "name": "City Guard",
+                    "multiplier": 10
+                }
+            ],
+            "east" : "East Kingdom Street",
+            "north" : "Tavern",
+            "south" : "Marketplace",
+            "area_type" : "City"
+        },
+        "Tavern":{
+            "description" : "Location: Tavern.\nYou talk to the innkeeper. He says \"Stay here for a while and get some rest.\" \nYou noticed following exits: south (Kingdom Street)",
+            "monsters" : [
+                { "name": "Cockroach",      "multiplier": 14 },
+                { "name": "Mouse",          "multiplier": 4 },
+                { "name": "City Guard",     "multiplier": 1 }
+            ],
+            "south" : "Kingdom Street",
+            "area_type" : "City"
+        },
+        "Marketplace":{
+            "description" : "Location: Marketplace; This place is bustling with people.\nMaybe you want to go to the blue duck\nhttps://shorturl.at/agnQR\nYou noticed following exits: north (Kingdom Street)",
+            "monsters": [
+                { "name": "Cockroach",      "multiplier": 14 },
+                { "name": "Mouse",          "multiplier": 4 },
+                { "name": "City Guard",     "multiplier": 1 }    
+            ],
+            "north": "Kingdom Street",
+            "area_type": "City"
+        },
+        "Deep Slime Forest":{
+            "description" : "Location: Deep Slime Forest; You are surrounded by woods. \nYou noticed following exits: west (Slime Forest)",
+            "monsters" : [
+                {"name": "Forest Slime",    "multiplier": 7},
+                {"name": "Bat",             "multiplier": 1},
+                {"name": "Hungry Wolf",     "multiplier": 1},
+                {"name": "Swamp Slime",     "multiplier": 1}
+            ]
+        }
+    }
+}
