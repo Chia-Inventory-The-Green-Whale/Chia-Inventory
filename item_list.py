@@ -1479,7 +1479,7 @@ Super_Powerful_Brave_Seedling_list = [
     'Brave Seedling #Chuck',
     'Brave Seedling #City Illusion']
 
-herb_list = Brave_Seedling_list
+herb_list = Brave_Seedling_list + Powerful_Brave_Seedling_list + Super_Powerful_Brave_Seedling_list
 
 Chia_Slime_list = [
     "Chia Slime #1",
