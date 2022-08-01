@@ -89,5 +89,58 @@ def assign_attribute(stats):
         stats.con = stats.con + random.randint(1, 5)
     if stats.familiar in Hard_Snail_list:
         stats.con = stats.con + random.randint(1, 5)
-
+    if stats.portrait in CeruleanBlueSkin_Chia_Farmers_List:
+        stats.int = stats.int + 1
+    if stats.portrait in CyanSkin_Chia_Farmers_List:
+        stats.con = stats.con + 1
+    if stats.portrait in DarkPurpleSkin_Chia_Farmers_List:
+        stats.cha = stats.cha + 1
+    if stats.portrait in GoldSkin_Chia_Farmers_List:
+        stats.luc = stats.luc + 1
+    if stats.portrait in GreenSkin_Chia_Farmers_List:
+        stats.wis = stats.wis + 1
+    if stats.portrait in JasmineSkin_Chia_Farmers_List:
+        stats.dex = stats.dex + 1
+    if stats.portrait in NarcissusSkin_Chia_Farmers_List:
+        stats.int = stats.int + 1
+    if stats.portrait in PaleMauveSkin_Chia_Farmers_List:
+        stats.wis = stats.wis + 1
+    if stats.portrait in VermeilSkin_Chia_Farmers_List:
+        stats.str = stats.str + 1
+    if stats.portrait in CrySkin_Chia_Farmers_List:
+        stats.cha = stats.cha + 1
+        stats.wis = stats.wis + 1
+        stats.luc = stats.luc - 2
+    if stats.portrait in RainbowSkin_Chia_Farmers_List:
+        stats.health = stats.health + 1
+        Rainbow_castchance = random.randint(1, 20)
+	    if Rainbow_castchance in [10,20]:
+		   stats.int = stats.int + 1
+           stats.cha = stats.cha + 1
+           stats.wis = stats.wis + 1
+           stats.dex = stats.dex + 1
+           stats.str = stats.str + 1
+           stats.con = stats.con + 1
+           stats.health = stats.health + 1
+    if stats.portrait in WaterTools_Chia_Farmers_List:
+        stats.con = stats.con + 1
+    if stats.portrait in SickleTools_Chia_Farmers_List:
+        stats.str = stats.str + 1
+    if stats.portrait in ShelfTools_Chia_Farmers_List:
+        stats.dex = stats.dex + 1
+    if stats.portrait in SaplingTools_Chia_Farmers_List:
+        stats.luc = stats.luc + 1
+    if stats.portrait in PitchforkTools_Chia_Farmers_List:
+        stats.str = stats.str + 1
+    if stats.portrait in MagicTools_Chia_Farmers_List:
+        stats.int = stats.int + 1
+    if stats.portrait in FlowersTools_Chia_Farmers_List:
+        stats.cha = stats.cha + 1
+    if stats.portrait in DoorplateTools_Chia_Farmers_List:
+        stats.wis = stats.wis + 1
+    if stats.portrait in ChiaFarmTools_Chia_Farmers_List:
+        stats.health = stats.health + 1
+        ChiaFarm_castchance = random.randint(1, 20)
+        if ChiaFarm_castchance in [10,20]:
+            stats.health = stats.health + 2
     return stats
