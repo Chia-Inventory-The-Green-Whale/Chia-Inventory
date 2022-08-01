@@ -2,6 +2,7 @@
 # cost
 hunt_cost = 200
 go_cost = 5
+escape_cost = 100
 
 # max stamina
 city_max_stamina = 1800
