@@ -75,6 +75,10 @@ def assign_attribute(stats):
     if stats.familiar in Purple_Chia_Slime_list:
         stats.wis = stats.wis + 1
         stats.cha = stats.cha - 1
+    if stats.familiar in Rock_Chia_Slime_list:
+        stats.con = stats.con + 2
+        stats.dex = stats.dex - 1
+        stats.cha = stats.cha - 1
     if stats.familiar in Healing_Chia_Slime_list:
         Healing_castchance = random.randint(1, 20)
         if Healing_castchance in [17, 18, 19, 20]:
@@ -83,6 +87,14 @@ def assign_attribute(stats):
         Identify_castchance = random.randint(1, 20)
         if Identify_castchance in [17, 18, 19, 20]:
             stats.int = stats.int + random.randint(2, 4)
+    if stats.familiar in DefensiveAura_Chia_Slime_list:
+        DefensiveAura_castchance = random.randint(1, 20)
+        if DefensiveAura_castchance in [17, 18, 19, 20]:
+            stats.defense = stats.defense + 1
+    if stats.familiar in RockSpike_Chia_Slime_list:
+        RockSpike_castchance = random.randint(1, 20)
+        if RockSpike_castchance in [17, 18, 19, 20]:
+            stats.pierce = stats.pierce + 1
     if stats.familiar in Snail_List:
         stats.dex = stats.dex - random.randint(1, 5)
         stats.luc = stats.luc + random.randint(1, 5)
