@@ -50,6 +50,11 @@ def assign_attribute(stats):
         stats.dex += int(stats.level / 8) * random.randint(1, 5)
         stats.con += int(stats.level / 8) * random.randint(1, 5)
 
+    if stats.weapon in Halberd_list:
+        stats.slash = 1
+        stats.pierce = 2
+        stats.str += int(stats.level / 4) * random.randint(1, 5)
+
     if stats.weapon in Red_Nuclei_Weapon_list:
         stats.str = stats.str + random.randint(1, 5)
     if stats.weapon in Orange_Nuclei_Weapon_list:
