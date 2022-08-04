@@ -125,7 +125,73 @@ def encounter(monster):
         monster.description = "A slime adapts swamp environment"
         monster.skill = "acid eruption"
         monster.attack_name = "bump"
-
+     
+    # Cave Residents
+     if monster.name == "Rock Slime":
+        monster.DEFslash = 0
+        monster.DEFbash = 3
+        monster.DEFpierce = 0
+        monster.attack = 2 + random.randint(1, 5)
+        monster.coin = 2
+        monster.health = 65 + random.randint(1, 10)
+        monster.exp = 3
+        monster.author = "chiaslimes#0354 xch1l4h559qkc284tc4rf0wp4umdxr8mk6jqymwwtjg0psmk4wmqracs632kmv"
+        monster.description = "A slime adapts cave environment"
+        monster.skill = "rock spikes"
+        monster.attack_name = "bump"
+        
+    if monster.name == "Cave Bear":
+        monster.DEFslash = 1
+        monster.DEFbash = 2
+        monster.DEFpierce = 0
+        monster.attack = 2 + random.randint(1, 5) + random.randint(1, 5)
+        monster.coin = 3
+        monster.health = 100 + random.randint(1, 10)
+        monster.exp = 3
+        monster.author = "chiaslimes#0354 xch1l4h559qkc284tc4rf0wp4umdxr8mk6jqymwwtjg0psmk4wmqracs632kmv"
+        monster.description = "While smaller then his brothers in the forest, his roar is amplfied by it's cove habitat and strikes fear in any who challege."
+        monster.skill = "roar"
+        monster.attack_name = "demoralizing roar"
+        
+    if monster.name == "Cave Troll":
+        monster.DEFslash = 2
+        monster.DEFbash = 2
+        monster.DEFpierce = 0
+        monster.attack = 4 + random.randint(1, 5) + random.randint(1, 5)
+        monster.coin = 5
+        monster.health = 200 + random.randint(1, 10)
+        monster.exp = 5
+        monster.author = "chiaslimes#0354 xch1l4h559qkc284tc4rf0wp4umdxr8mk6jqymwwtjg0psmk4wmqracs632kmv"
+        monster.description = "The caves are a Trolls home turf - take care when challenging them."
+        monster.skill = "club bash"
+        monster.attack_name = "club bash"
+        
+    if monster.name == "Cave Imp Warrior":
+        monster.DEFslash = 1
+        monster.DEFbash = 1
+        monster.DEFpierce = 0
+        monster.attack = 1 + random.randint(1, 5) + random.randint(1, 5)
+        monster.coin = 2
+        monster.health = 75 + random.randint(1, 10)
+        monster.exp = 2
+        monster.author = "chiaslimes#0354 xch1l4h559qkc284tc4rf0wp4umdxr8mk6jqymwwtjg0psmk4wmqracs632kmv"
+        monster.description = "Imps are rarely seen outdoors, they enjoy the silence and solitude of caves."
+        monster.skill = "spear attack"
+        monster.attack_name = "imp poke"
+        
+    if monster.name == "Cave Imp Mage":
+        monster.DEFslash = 1
+        monster.DEFbash = 1
+        monster.DEFpierce = 0
+        monster.attack = 2 + random.randint(1, 5) + random.randint(1, 5)
+        monster.coin = 2
+        monster.health = 55 + random.randint(1, 10)
+        monster.exp = 2
+        monster.author = "chiaslimes#0354 xch1l4h559qkc284tc4rf0wp4umdxr8mk6jqymwwtjg0psmk4wmqracs632kmv"
+        monster.description = "Some Imps dable in the magic arts...but they are not very reliable at it..."
+        monster.skill = "rock throw"
+        monster.attack_name = "rock throw"
+                
     # Murloc
     if monster.name == "Murloc Grunt":
         monster.DEFslash = 1
