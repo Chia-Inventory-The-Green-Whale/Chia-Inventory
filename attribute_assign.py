@@ -105,11 +105,17 @@ def assign_attribute(stats):
     if stats.mount in Bandana_red_Deer_list:
         stats.int = stats.int + random.randint(1, 2)
     if stats.mount in One_Blink_Deer_list:
-        stats.cha = stats.cha + random.randint(0, 1)
+        charm_castchance = random.randint(1, 20)
+        if charm_castchance in [1, 2, 3, 4]:
+            stats.cha = stats.cha + 1
     if stats.mount in Two_Blink_Deer_list:
-        stats.cha = stats.cha + stats.cha + 1
-    if stats.mount in Three_Blink_Deer_list:
-        stats.cha = stats.cha + random.randint(1, 2)
+        charmtwo_castchance = random.randint(1, 10)
+        if charm_castchance in [1, 2, 3, 4, 5]:
+            stats.cha = stats.cha + 1
+    if stats.mount in Rudolf_Blink_Deer_list:
+        charmthree_castchance = random.randint(1, 10)
+        if charm_castchance in [1, 2, 3, 4, 5]:
+            stats.cha = stats.cha + 1
 
     # Brave Seedling
     if stats.herb in Brave_Seedling_list:
