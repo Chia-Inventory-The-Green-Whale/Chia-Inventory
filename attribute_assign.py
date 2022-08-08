@@ -90,9 +90,26 @@ def assign_attribute(stats):
 
     # Deer
     if stats.mount in Deer_list:
-        stats.dex = stats.dex + random.randint(1, 5)
+        stats.dex = stats.dex + random.randint(1, 3)
+    if stats.mount in Adult_Deer_list:
+        stats.str = stats.str + stats.str + 1
     if stats.mount in Majestic_Deer_list:
-        stats.str = stats.str + random.randint(1, 5)
+        stats.str = stats.str + random.randint(1, 3)
+    if stats.mount in Vines_Deer_list:
+        stats.wis = stats.wis + 1
+    if stats.mount in Slime_Deer_list:
+        stats.dex = stats.dex - random.randint(1, 3)
+        stats.luc = stats.luc + random.randint(1, 3)
+    if stats.mount in Bandana_purple_Deer_list:
+        stats.con = stats.con + 1
+    if stats.mount in Bandana_red_Deer_list:
+        stats.int = stats.int + random.randint(1, 2)
+    if stats.mount in One_Blink_Deer_list:
+        stats.cha = stats.cha + random.randint(0, 1)
+    if stats.mount in Two_Blink_Deer_list:
+        stats.cha = stats.cha + stats.cha + 1
+    if stats.mount in Three_Blink_Deer_list:
+        stats.cha = stats.cha + random.randint(1, 2)
 
     # Brave Seedling
     if stats.herb in Brave_Seedling_list:
