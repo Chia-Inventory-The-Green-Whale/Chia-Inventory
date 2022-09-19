@@ -1,0 +1,67 @@
+#Summary: Serge's quest requires players to hunt slimes and gather 1 Forest Slime Core and 10 Drips of Slime in exchange for a Plant Slime.  
+#Drips of Slime should be uncommon (maybe at the same rate as rags?) drops from any slime monster in the game
+#Forest Slime Core should be very rare drops from Forest Slimes only
+
+#NPC Attributes
+npc_name = "Serge"
+npc_icon = ":zombie:"
+npc_location = "Deep Slime Forest"
+
+#NPC Dialog Tree
+#!ask npc_name
+	ask_base = "
+		1 Who are you?
+		2 What's all this equipment?
+		3 Can I help you?
+	"
+
+
+#!ask npc_name 1
+	ask_1 = "
+		Huh? Can't you see I'm busy here!
+		1 Hey, no really, who are you and what are you doing?
+	"
+#!ask npc_name 1 1
+	ask_1_1 = "
+		Ugh...fine.  I'm Serge - I used to be a monster hunter, but now I'm studying plant slimes in the forest.  What do you want?!
+	"
+
+
+
+
+#!ask npc_name 2
+	ask_2 = "
+		hmm? I need this alchemy equipment - the vials, beakers and burners - to study plant slimes.  Jeez, maintaining all of this is keeping me busy...
+		1 What are you trying to discover about plant slimes?
+	"
+
+#!ask npc_name 2 1
+	ask_2_2 = "
+		Well..it's really about ALL slimes, but these plant ones are really friendly.  If I can get enough slime cores...just maybe...wait - why do you want to know?!
+	"
+
+
+
+#!ask npc_name 3
+	ask_3 = "
+		Oh...well if you could bring me a Forest Slime Core, along with 10 drips of slime, that would be great! I need more supplies for these experiments.
+		1 Sure, I'll bring you 1 Forest Slime Core and 10 drips of slime.
+		2 I've got the 1 Forest Slime and the 10 drips of slime you wanted!
+	"
+	
+#!ask npc_name 3 1
+	ask_3_1 = "
+		Good! Get to work and out of my sight!
+		Quest accepted.
+	"
+	#gives player the Forest Slime quest
+	
+#!ask npc_name 3 2
+	#check if player has the quest
+	#check if player has the req items in inventory (1 Forest Slime Core, 10 Drips of Slime)
+	ask_3_2 = "
+		Ah perfect, I'll just put the core in this bag for later...heh heh heh:smiling_imp:.  Here, you can take one of these plant slimes as a pet if you want, there are too many of them!
+	"
+	#remove 1 Forest Slime Core, 10 Drips of Slime from player inventory
+	#add 1 Plant Slime to player inventory
+	
