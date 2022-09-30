@@ -21,7 +21,7 @@ def modify_item_attributes():
             item_list[i]["in-game-attributes"]["1"]["buff_requirement"] = "feed"
             item_list[i]["in-game-attributes"]["1"]["feed"] = "Dog Food"
             item_list[i]["in-game-attributes"]["1"]["buff_duration"] = 30
-        if item_list[i]["collection_name"] == "Balldog Collection":
+        if item_list[i]["collection_name"] == "Anti Dogg Collection":
             item_list[i]["item_type"] = "pet"
             attr_list = ["buff_str", "buff_dex", "buff_con", "buff_int", "buff_wis", "buff_cha", "buff_luc"]
             if item_list[i]["on-chain-attributes"].get("10") != None:
@@ -119,6 +119,21 @@ def modify_item_attributes():
                     item_list[i]["in-game-attributes"]["0"] = {}
                     item_list[i]["in-game-attributes"]["0"]["type"] = "buff_health"
                     item_list[i]["in-game-attributes"]["0"]["factor"] = "random"
+                    item_list[i]["in-game-attributes"]["0"]["value"] = 5
+                    item_list[i]["in-game-attributes"]["0"]["buff_requirement"] = "feed"
+                    item_list[i]["in-game-attributes"]["0"]["feed"] = "Dog Food"
+                    item_list[i]["in-game-attributes"]["0"]["buff_duration"] = 30
+                    item_list[i]["in-game-attributes"]["1"] = {}
+                    item_list[i]["in-game-attributes"]["1"]["type"] = choice(attr_list)
+                    item_list[i]["in-game-attributes"]["1"]["factor"] = "random"
+                    item_list[i]["in-game-attributes"]["1"]["value"] = 5
+                    item_list[i]["in-game-attributes"]["1"]["buff_requirement"] = "feed"
+                    item_list[i]["in-game-attributes"]["1"]["feed"] = "Dog Food"
+                    item_list[i]["in-game-attributes"]["1"]["buff_duration"] = 30
+                if item_list[i]["on-chain-attributes"]["10"]["value"] == "Monitor":
+                    item_list[i]["in-game-attributes"]["0"] = {}
+                    item_list[i]["in-game-attributes"]["0"]["type"] = "buff_int"
+                    item_list[i]["in-game-attributes"]["0"]["factor"] = "random"
                     item_list[i]["in-game-attributes"]["0"]["value"] = 1
                     item_list[i]["in-game-attributes"]["0"]["buff_requirement"] = "feed"
                     item_list[i]["in-game-attributes"]["0"]["feed"] = "Dog Food"
@@ -126,7 +141,7 @@ def modify_item_attributes():
                     item_list[i]["in-game-attributes"]["1"] = {}
                     item_list[i]["in-game-attributes"]["1"]["type"] = choice(attr_list)
                     item_list[i]["in-game-attributes"]["1"]["factor"] = "random"
-                    item_list[i]["in-game-attributes"]["1"]["value"] = 1
+                    item_list[i]["in-game-attributes"]["1"]["value"] = 5
                     item_list[i]["in-game-attributes"]["1"]["buff_requirement"] = "feed"
                     item_list[i]["in-game-attributes"]["1"]["feed"] = "Dog Food"
                     item_list[i]["in-game-attributes"]["1"]["buff_duration"] = 30
@@ -190,6 +205,7 @@ def modify_item_attributes():
                     item_list[i]["in-game-attributes"]["1"]["buff_requirement"] = "feed"
                     item_list[i]["in-game-attributes"]["1"]["feed"] = "Dog Food"
                     item_list[i]["in-game-attributes"]["1"]["buff_duration"] = 30
-                    
+
+
     with open('./library/item_list.json', 'w') as file:
         json.dump(item_list, file)
