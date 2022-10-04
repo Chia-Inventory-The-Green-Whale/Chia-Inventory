@@ -1,0 +1,71 @@
+#NPC template for collaborators to submit to the Chiania/Chia Inventory Project
+
+#NPC Attributes
+
+npc_name = ""
+npc_icon = ""
+npc_location = ""
+
+#NPC Dialog Tree
+#!ask npc_name
+	ask_base = "
+		1 Question1
+		2 Question2
+		3 Question3
+	"
+
+
+#!ask npc_name 1
+	ask_1 = "
+		Response text from NPC
+		1 Sub-Question1
+		2 Sub-Question2
+		3 Sub-Question3
+	"
+
+#!ask npc_name 1 1
+	ask_1_1 = "
+		example response	
+	"
+
+#!ask npc_name 1 2
+	ask_1_2 = "
+		example response
+	"
+
+#!ask npc_name 1 3
+	ask_1_3 = "
+		example response
+	"
+
+
+#!ask npc_name 2
+	ask_2 = "
+		example response
+	"
+
+#!ask npc_name 2 1
+	ask_2_1 = "
+		example response
+	"
+
+#!ask npc_name 2 2
+	ask_2_2 = "
+		example response
+	"
+
+
+#!ask npc_name 3
+	ask_3 = "
+		example response
+	"
+
+#!ask npc_name 3 1
+	ask_3_1 = "
+		example response
+	"
+
+#!ask npc_name 3 2
+	ask_3_2 = "
+		example response
+	"
