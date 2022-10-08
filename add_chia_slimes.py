@@ -4,9 +4,20 @@ def modify_item_attributes():
         file.close()
     print("read db")
 
-    for i in item_list:
+    for i in item_list.copy():
+        if item_list[i]["in-game-attributes"].get("enhancement") == None:
+            item_list[i]["in-game-attributes"]["enhancement"] = {}
+            item_list[i]["in-game-attributes"]["enhancement"]["type"] = "enhancement"
+            item_list[i]["in-game-attributes"]["enhancement"]["value"] = 0
+
         if item_list[i]["collection_name"] == "Chia Slimes":
             print("Chia Slimes = familiar")
+            if item_list[i]["in-game-attributes"].get("0") != None:
+                item_list[i]["in-game-attributes"].pop("0")
+            if item_list[i]["in-game-attributes"].get("1") != None:
+                item_list[i]["in-game-attributes"].pop("1")
+            if item_list[i]["in-game-attributes"].get("2") != None:
+                item_list[i]["in-game-attributes"].pop("2")
             item_list[i]["item_type"] = "familiar"
             for j in item_list[i]["on-chain-attributes"]:
                 if item_list[i]["on-chain-attributes"][j].get("trait_type") == "Color":
@@ -16,7 +27,7 @@ def modify_item_attributes():
                     if color in ["Alpha-Green-00af29", "T-Alpha-Green-00af29", "Plant-CoolVine-25ae78",
                                  "Plant-DryGrass-72c83e15", "Plant-ForestShadow-3a6557",
                                  "Plant-HeartoftheForest-33652b", "Plant-MoreGreen-68a145", "Plant-Swamp-303d21",
-                                 "Plant-Unnatural-155f01", "T-Plant-Unnatural-155f01"]:
+                                 "Plant-Unnatural-155f01", "T-Plant-Unnatural-155f01", "T-Plant-CoolVine-25ae78"]:
                         color = "Green"
                     if color in ["Beta-Orange-ff9c01", "T-Beta-Orange-ff9c01"]:
                         color = "Orange"
