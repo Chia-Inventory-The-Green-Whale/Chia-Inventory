@@ -20,6 +20,12 @@ def modify_item_attributes():
                 item_list[i]["in-game-attributes"].pop("2")
             if item_list[i]["in-game-attributes"].get("3") != None:
                 item_list[i]["in-game-attributes"].pop("3")
+            if item_list[i]["in-game-attributes"].get("species_effect_5") != None:
+                item_list[i]["in-game-attributes"].pop("species_effect_5")
+            if item_list[i]["in-game-attributes"].get("species_effect_6") != None:
+                item_list[i]["in-game-attributes"].pop("species_effect_6")
+            if item_list[i]["in-game-attributes"].get("species_effect_4") != None:
+                item_list[i]["in-game-attributes"].pop("species_effect_4")
 
             item_list[i]["item_type"] = "mount"
 
@@ -46,21 +52,10 @@ def modify_item_attributes():
                 item_list[i]["in-game-attributes"]["species_effect_2"]["factor"] = "random"
                 item_list[i]["in-game-attributes"]["species_effect_2"]["value"] = 1
                 item_list[i]["in-game-attributes"]["species_effect_3"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_3"]["type"] = "increase_dex"
+                item_list[i]["in-game-attributes"]["species_effect_3"]["type"] = "increase_str"
                 item_list[i]["in-game-attributes"]["species_effect_3"]["factor"] = "random"
                 item_list[i]["in-game-attributes"]["species_effect_3"]["value"] = 5
-                item_list[i]["in-game-attributes"]["species_effect_4"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_4"]["type"] = "increase_str"
-                item_list[i]["in-game-attributes"]["species_effect_4"]["factor"] = "random"
-                item_list[i]["in-game-attributes"]["species_effect_4"]["value"] = 2
-                item_list[i]["in-game-attributes"]["species_effect_5"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_5"]["type"] = "increase_wis"
-                item_list[i]["in-game-attributes"]["species_effect_5"]["factor"] = "random"
-                item_list[i]["in-game-attributes"]["species_effect_5"]["value"] = 2
-                item_list[i]["in-game-attributes"]["species_effect_6"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_6"]["type"] = "increase_luc"
-                item_list[i]["in-game-attributes"]["species_effect_6"]["factor"] = "random"
-                item_list[i]["in-game-attributes"]["species_effect_6"]["value"] = 3
+
 
             if species == "warsheep":
                 item_list[i]["in-game-attributes"]["species_effect_1"] = {}
@@ -68,29 +63,18 @@ def modify_item_attributes():
                 item_list[i]["in-game-attributes"]["species_effect_1"]["factor"] = "constant"
                 item_list[i]["in-game-attributes"]["species_effect_1"]["value"] = 1
                 item_list[i]["in-game-attributes"]["species_effect_2"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_2"]["type"] = "increase_con"
+                item_list[i]["in-game-attributes"]["species_effect_2"]["type"] = "increase_luc"
                 item_list[i]["in-game-attributes"]["species_effect_2"]["factor"] = "random"
                 item_list[i]["in-game-attributes"]["species_effect_2"]["value"] = 5
                 item_list[i]["in-game-attributes"]["species_effect_3"] = {}
                 item_list[i]["in-game-attributes"]["species_effect_3"]["type"] = "increase_dex"
                 item_list[i]["in-game-attributes"]["species_effect_3"]["factor"] = "random"
                 item_list[i]["in-game-attributes"]["species_effect_3"]["value"] = 3
-                item_list[i]["in-game-attributes"]["species_effect_4"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_4"]["type"] = "increase_str"
-                item_list[i]["in-game-attributes"]["species_effect_4"]["factor"] = "random"
-                item_list[i]["in-game-attributes"]["species_effect_4"]["value"] = 2
-                item_list[i]["in-game-attributes"]["species_effect_5"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_5"]["type"] = "increase_wis"
-                item_list[i]["in-game-attributes"]["species_effect_5"]["factor"] = "random"
-                item_list[i]["in-game-attributes"]["species_effect_5"]["value"] = 1
-                item_list[i]["in-game-attributes"]["species_effect_6"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_6"]["type"] = "increase_luc"
-                item_list[i]["in-game-attributes"]["species_effect_6"]["factor"] = "random"
-                item_list[i]["in-game-attributes"]["species_effect_6"]["value"] = 2
+
 
             if species == "nightsaber":
                 item_list[i]["in-game-attributes"]["species_effect_1"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_1"]["type"] = "increase_defense"
+                item_list[i]["in-game-attributes"]["species_effect_1"]["type"] = "increase_str"
                 item_list[i]["in-game-attributes"]["species_effect_1"]["factor"] = "constant"
                 item_list[i]["in-game-attributes"]["species_effect_1"]["value"] = 1
                 item_list[i]["in-game-attributes"]["species_effect_2"] = {}
@@ -101,18 +85,7 @@ def modify_item_attributes():
                 item_list[i]["in-game-attributes"]["species_effect_3"]["type"] = "increase_dex"
                 item_list[i]["in-game-attributes"]["species_effect_3"]["factor"] = "random"
                 item_list[i]["in-game-attributes"]["species_effect_3"]["value"] = 6
-                item_list[i]["in-game-attributes"]["species_effect_4"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_4"]["type"] = "increase_str"
-                item_list[i]["in-game-attributes"]["species_effect_4"]["factor"] = "constant"
-                item_list[i]["in-game-attributes"]["species_effect_4"]["value"] = 1
-                item_list[i]["in-game-attributes"]["species_effect_5"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_5"]["type"] = "increase_wis"
-                item_list[i]["in-game-attributes"]["species_effect_5"]["factor"] = "random"
-                item_list[i]["in-game-attributes"]["species_effect_5"]["value"] = 2
-                item_list[i]["in-game-attributes"]["species_effect_6"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_6"]["type"] = "increase_luc"
-                item_list[i]["in-game-attributes"]["species_effect_6"]["factor"] = "random"
-                item_list[i]["in-game-attributes"]["species_effect_6"]["value"] = 2
+
 
             if species == "magic marmot":
                 item_list[i]["in-game-attributes"]["species_effect_1"] = {}
@@ -124,21 +97,10 @@ def modify_item_attributes():
                 item_list[i]["in-game-attributes"]["species_effect_2"]["factor"] = "random"
                 item_list[i]["in-game-attributes"]["species_effect_2"]["value"] = 1
                 item_list[i]["in-game-attributes"]["species_effect_3"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_3"]["type"] = "increase_dex"
+                item_list[i]["in-game-attributes"]["species_effect_3"]["type"] = "increase_int"
                 item_list[i]["in-game-attributes"]["species_effect_3"]["factor"] = "random"
-                item_list[i]["in-game-attributes"]["species_effect_3"]["value"] = 2
-                item_list[i]["in-game-attributes"]["species_effect_4"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_4"]["type"] = "increase_str"
-                item_list[i]["in-game-attributes"]["species_effect_4"]["factor"] = "constant"
-                item_list[i]["in-game-attributes"]["species_effect_4"]["value"] = 2
-                item_list[i]["in-game-attributes"]["species_effect_5"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_5"]["type"] = "increase_wis"
-                item_list[i]["in-game-attributes"]["species_effect_5"]["factor"] = "random"
-                item_list[i]["in-game-attributes"]["species_effect_5"]["value"] = 5
-                item_list[i]["in-game-attributes"]["species_effect_6"] = {}
-                item_list[i]["in-game-attributes"]["species_effect_6"]["type"] = "increase_luc"
-                item_list[i]["in-game-attributes"]["species_effect_6"]["factor"] = "random"
-                item_list[i]["in-game-attributes"]["species_effect_6"]["value"] = 3
+                item_list[i]["in-game-attributes"]["species_effect_3"]["value"] = 5
+
 
             attr_list = ["increase_str", "increase_dex", "increase_con", "increase_int", "increase_wis", "increase_cha",
                          "increase_luc"]
@@ -149,3 +111,7 @@ def modify_item_attributes():
             item_list[i]["in-game-attributes"]["mount_attribute"] = {}
             item_list[i]["in-game-attributes"]["mount_attribute"]["type"] = "mount_stamina"
             item_list[i]["in-game-attributes"]["mount_attribute"]["value"] = randint(100, 120)
+
+
+    with open('./library/item_list.json', 'w') as file:
+        json.dump(item_list, file)
