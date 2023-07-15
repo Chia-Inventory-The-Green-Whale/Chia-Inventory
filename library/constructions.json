@@ -1,0 +1,18 @@
+{
+  "Manor Hall": {
+    "name": "Manor Hall",
+    "construction_type": "accommodation",
+    "enter": true,
+    "teleport": "Manor Hall",
+    "description": "A manor hall.",
+    "icon": "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/manor13.jpg?raw=true"
+  },
+  "Entrance of Underground Waterway": {
+    "name": "Entrance of Underground Waterway",
+    "construction_type": "dungeon",
+    "enter": true,
+    "teleport": "Underground Waterway",
+    "description": "This is an entrance of underground waterway in Chiania Kingdom. You can !enter this construction.",
+    "icon": "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/entranceofundergroundpathway.jpg?raw=true"
+  }
+}

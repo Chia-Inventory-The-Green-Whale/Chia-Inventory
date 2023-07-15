@@ -1,0 +1,800 @@
+{
+  "Peter": {
+    "1": {
+      "question": "Who are you?",
+      "response": "I'm Peter, the tax collector.",
+      "type": "rumor"
+    },
+    "2": {
+      "question": "Is there anything I can do for Kingdom Chiania? For example, maybe the Queen wants something...",
+      "response": "Sure, have you ever heard about the upcoming war between Chiania and the Orc tribes? Chiania is preparing resources for military use, for example, crops for making food rations...If you donate resources, the Queen would appreciate your contributions.",
+      "type": "rumor"
+    },
+    "3": {
+      "question": "What if I have some Bearberry?",
+      "response": "Well, our Queen...no, Kingdom Chiania would have a good use of it, but at least donate 100 units.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I will prepare for that.",
+          "response": "Good to hear that.",
+          "type": "accept_quest",
+          "accept_quest": "collect bearberry"
+        },
+        "2": {
+          "question": "I have enough amount for donation!",
+          "response": "Good to hear that.",
+          "type": "finish_quest",
+          "finish_quest": "collect bearberry"
+        }
+      }
+    },
+    "4": {
+      "question": "What if I have some Cacatus Fruit?",
+      "response": "Well, our Queen...no, Kingdom Chiania would have a good use of it, but at least donate 100 units.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I will prepare for that.",
+          "response": "Good to hear that.",
+          "type": "accept_quest",
+          "accept_quest": "collect cacatus fruit"
+        },
+        "2": {
+          "question": "I have enough amount for donation!",
+          "response": "Good to hear that.",
+          "type": "finish_quest",
+          "finish_quest": "collect cacatus fruit"
+        }
+      }
+    },
+    "5": {
+      "question": "What if I have some Rumberry Fruit?",
+      "response": "Well, our Queen...no, Kingdom Chiania would have a good use of it, but at least donate 100 units.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I will prepare for that.",
+          "response": "Good to hear that.",
+          "type": "accept_quest",
+          "accept_quest": "collect rumberry fruit"
+        },
+        "2": {
+          "question": "I have enough amount for donation!",
+          "response": "Good to hear that.",
+          "type": "finish_quest",
+          "finish_quest": "collect rumberry fruit"
+        }
+      }
+    },
+    "6": {
+      "question": "What if I have some Bilberry?",
+      "response": "Well, our Queen...no, Kingdom Chiania would have a good use of it, but at least donate 100 units.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I will prepare for that.",
+          "response": "Good to hear that.",
+          "type": "accept_quest",
+          "accept_quest": "collect bilberry"
+        },
+        "2": {
+          "question": "I have enough amount for donation!",
+          "response": "Good to hear that.",
+          "type": "finish_quest",
+          "finish_quest": "collect bilberry"
+        }
+      }
+    },
+    "7": {
+      "question": "What if I have some Kidney Bean?",
+      "response": "Well, our Queen...no, Kingdom Chiania would have a good use of it, but at least donate 100 units.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I will prepare for that.",
+          "response": "Good to hear that.",
+          "type": "accept_quest",
+          "accept_quest": "collect kidney bean"
+        },
+        "2": {
+          "question": "I have enough amount for donation!",
+          "response": "Good to hear that.",
+          "type": "finish_quest",
+          "finish_quest": "collect kidney bean"
+        }
+      }
+    },
+    "8": {
+      "question": "What if I have some Sunflower Seed?",
+      "response": "Well, our Queen...no, Kingdom Chiania would have a good use of it, but at least donate 100 units.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I will prepare for that.",
+          "response": "Good to hear that.",
+          "type": "accept_quest",
+          "accept_quest": "collect sunflower seed"
+        },
+        "2": {
+          "question": "I have enough amount for donation!",
+          "response": "Good to hear that.",
+          "type": "finish_quest",
+          "finish_quest": "collect sunflower seed"
+        }
+      }
+    },
+    "9": {
+      "question": "What if I have some Sorghum Grain?",
+      "response": "Well, our Queen...no, Kingdom Chiania would have a good use of it, but at least donate 100 units.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I will prepare for that.",
+          "response": "Good to hear that.",
+          "type": "accept_quest",
+          "accept_quest": "collect sorghum grain"
+        },
+        "2": {
+          "question": "I have enough amount for donation!",
+          "response": "Good to hear that.",
+          "type": "finish_quest",
+          "finish_quest": "collect sorghum grain"
+        }
+      }
+    }
+  },
+  "Guard": {
+    "1": {
+      "question": "Who are you?",
+      "response": "I'm a guard here, don't ask me why.",
+      "type": "rumor"
+    },
+    "2": {
+      "question": "Why are you looking at me?",
+      "response": "Do you know hunting is not permitted in Viridis?",
+      "type": "rumor"
+    }
+  },
+  "Sam": {
+    "1": {
+      "question": "Who are you?",
+      "response": "I'm Sam, the barkeeper.",
+      "type": "rumor"
+    },
+    "2": {
+      "question": "I want to ask about goblins.",
+      "response": "Goblins are not strong, but they are extremely sneaky, which make them more dangerous than the other monsters.....",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I want to ask about Goblin Stronghold",
+          "response": "I heard that goblins imprison important persons in their stronghold.....",
+          "type": "rumor"
+        },
+        "2": {
+          "question": "I want to ask about Goblin Warrior",
+          "response": "Goblin Warriors are usually armed with short axes and shield",
+          "type": "rumor"
+        },
+        "3": {
+          "question": "I want to ask about Goblin Archer",
+          "response": "Goblin Archers are sneaky and dangerous",
+          "type": "rumor"
+        }
+      }
+    },
+    "3": {
+      "question": "Do you have any idea about the disappreance of apprentice?",
+      "response": "I heard that the apprentice of master blacksmith was captured by goblins.....",
+      "type": "rumor"
+    },
+    "4": {
+      "question": "What do you sell?",
+      "response": "We have beers and wines, 60 and 90 CC, respectively.",
+      "type": "rumor",
+      "merchant_link": "Barkeeper",
+      "ask": {
+        "1": {
+          "question": "I want to buy a bottle of beer!",
+          "response": "Here it is!",
+          "type": "merchant",
+          "merchandise": "Beer",
+          "number": 1,
+          "price": 60,
+          "material": []
+        },
+        "2": {
+          "question": "I want to buy a bottle of wine!",
+          "response": "Here it is!",
+          "type": "merchant",
+          "merchandise": "Wine",
+          "number": 1,
+          "price": 90,
+          "material": []
+        }
+      }
+    },
+    "5": {
+      "question": "Any chance to earn money here?",
+      "response": "There are too many cockroaches and mouses in tavern, hope someone can help me to kill them.....",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I want to help you to kill cockroaches!",
+          "response": "Great! I would give you 3 Chiania Coin and a bottle of beer or wine for 10 corpses of cockroaches.",
+          "type": "accept_quest",
+          "accept_quest": "kill cockroach"
+        },
+        "2": {
+          "question": "I have killed 10 cockroaches!",
+          "response": "Great! let me check what you got...",
+          "type": "finish_quest",
+          "finish_quest": "kill cockroach"
+        },
+        "3": {
+          "question": "I want to help you to kill mouses!",
+          "response": "Great! I would give you 3 Chiania Coin and a bottle of beer or wine for 10 corpses of mouses.",
+          "type": "accept_quest",
+          "accept_quest": "kill mouse"
+        },
+        "4": {
+          "question": "I have killed 10 mouses!",
+          "response": "Great! let me check what you got...",
+          "type": "finish_quest",
+          "finish_quest": "kill mouse"
+        }
+      }
+    }
+  },
+  "Lena": {
+    "1": {
+      "question": "Who are you?",
+      "response": "I'm Lena, a traveling merchant. I like to collect treasure boxes!",
+      "type": "rumor"
+    },
+    "2": {
+      "question": "What do you sell?",
+      "response": "I sell treasure boxes I found during travel, 120 coins for each.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "Sounds good! give me a treasure box.",
+          "response": "Thanks, here it is!",
+          "type": "merchant",
+          "merchandise": "Lena's Treasure Box",
+          "number": 1,
+          "price": 120,
+          "material": []
+        },
+        "2": {
+          "question": "I'm not interested in your treasure box.",
+          "response": "Fine.",
+          "type": "rumor"
+        }
+      }
+    }
+  },
+  "Paul": {
+    "1": {
+      "question": "Who are you?",
+      "response": "I'm Paul, the master blacksmith.",
+      "type": "rumor"
+    },
+    "2": {
+      "question": "Do you sell weapons and armors?",
+      "response": "No, I don't sell equipment directly, but I help adventurers to re-forge their weapons and armors.",
+      "type": "rumor"
+    },
+    "3": {
+      "question": "Can you help me to smelt Iron Ore?",
+      "response": "Sure, this is a basic skill of blacksmith. If you pay me 20 coins, I can smelt an Iron Ore and make an Iron Bar for you.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I want to smelt Iron Ore!",
+          "response": "As you wish.",
+          "type": "accept_quest",
+          "accept_quest": "smelt iron ore"
+        },
+        "2": {
+          "question": "I got some Iron Ore for you!",
+          "response": "Here is your Iron Bar.",
+          "type": "finish_quest",
+          "finish_quest": "smelt iron ore"
+        }
+      }
+    },
+    "4": {
+      "question": "Can you help me to re-forge my Chiania Club?",
+      "response": "I can, but you need to pay me 200 coins. Are you sure you want to do this?",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "Sure!",
+          "response": "Let me check...",
+          "type": "reforge",
+          "reforge": "Chiania Club",
+          "price": 200,
+          "reputation": 0
+        },
+        "2": {
+          "question": "I need to prepare some money for that...",
+          "response": "Of course...",
+          "type": "rumor"
+        }
+      }
+    },
+    "5": {
+      "question": "I want to enhance my equipments, do you have refining stones?",
+      "response": "I have, 100 CC for each.",
+      "type": "rumor",
+      "merchant_link": "Barkeeper",
+      "ask": {
+        "1": {
+          "question": "I want to buy a refining stone!",
+          "response": "Here it is!",
+          "type": "merchant",
+          "merchandise": "Refining Stone",
+          "number": 1,
+          "price": 100,
+          "material": []
+        },
+        "2": {
+          "question": "I want to buy three refining stones!",
+          "response": "Here it is!",
+          "type": "merchant",
+          "merchandise": "Refining Stone",
+          "number": 3,
+          "price": 300,
+          "material": []
+        },
+        "3": {
+          "question": "I forgot to bring money...",
+          "response": "Ok, fine...",
+          "type": "rumor"
+        }
+      }
+    }
+  },
+  "Calanis": {
+    "1": {
+      "question": "Who are you?",
+      "response": "I'm Calanis. I'm druid and I represent elves in Slime Forest.",
+      "type": "rumor"
+    },
+    "2": {
+      "question": "Is there anything I can do for you?",
+      "response": "I'm recruiting adventurers to eliminate the Swamp Slime, want to help?",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I want to kill the swamp slimes!",
+          "response": "Great, If you kill a swamp slimes, I would give you some elven cookies as reward.",
+          "type": "accept_quest",
+          "accept_quest": "kill swamp slime"
+        },
+        "2": {
+          "question": "I have killed a swamp slime!",
+          "response": "Here is your reward.",
+          "type": "finish_quest",
+          "finish_quest": "kill swamp slime"
+        }
+      }
+    }
+  },
+  "Allen": {
+    "1": {
+      "question": "Who are you?",
+      "response": "I'm Allen, as you see, I'm a hunter.",
+      "type": "rumor"
+    },
+    "2": {
+      "question": "Why you camp at such a dangerous place?",
+      "response": "I'm finding my lost dog, Pochi. Did you see the goblins? They scared away the animals and captured human, I suspect Pochi is captured by goblins as well.",
+      "type": "rumor"
+    },
+    "3": {
+      "question": "What can I do for you?",
+      "response": "I saw goblins push people and animals into wood cages, can you help me to release them?",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I would like to help!",
+          "response": "Great, if you rescue the people captured by goblins and show me evidence (items left by the victims), I would give you some money as reward.",
+          "type": "accept_quest",
+          "accept_quest": "release people captured by goblins"
+        },
+        "2": {
+          "question": "I have released people from the wood cages!",
+          "response": "Here is your reward.",
+          "type": "finish_quest",
+          "finish_quest": "release people captured by goblins"
+        }
+      }
+    }
+  },
+  "Ironna": {
+    "1": {
+      "question": "Who are you?",
+      "response": "Ironna, I'm the greatest and the most respected blacksmith in Chiania. What? You doubt about that?",
+      "type": "rumor"
+    },
+    "2": {
+      "question": "If you're really as good as you say you are, why you stay here and work for the master blacksmith?",
+      "response": "I am a half-elf orphan and Paul raised me up, that's the reason.",
+      "type": "rumor"
+    },
+    "3": {
+      "question": "What if I got a notebook page you dropped in Goblinstronghold?",
+      "response": "Are you sure? Give it to me!",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "Hum..., I am not sure whether I should give it to you.",
+          "response": "Ok, I would forge a Chiania Club for you if you have my notebook pages, but you need to prepare the following materials: 3 Iron Bars, 1 Rag, and 1 Wooden Log.",
+          "type": "accept_quest",
+          "accept_quest": "forge a chiania club"
+        },
+        "2": {
+          "question": "Here are your notebook page and the materials you ask for.",
+          "response": "Ok, let me see...",
+          "type": "finish_quest",
+          "finish_quest": "forge a chiania club"
+        }
+      }
+    }
+  },
+  "Oliver": {
+    "1": {
+      "question": "Who are you?",
+      "response": "I'm Oliver, I train animals and monsters.",
+      "type": "rumor"
+    },
+    "2": {
+      "question": "Do you sell food for my pets and familiars?",
+      "response": "Not sure what kind of pets you have, but I do have some feedstuffs, such as Dog Food (20 gold each).",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I want some dog food!",
+          "response": "As you wish!",
+          "type": "merchant",
+          "merchandise": "Dog Food",
+          "number": 1,
+          "price": 20,
+          "material": []
+        }
+      }
+    },
+    "3": {
+      "question": "Can you help me to train my Plant Slime?",
+      "response": "I can, but you need to pay me 200 coins. Are you sure you want to do this?",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "Sure!",
+          "response": "Let me check...",
+          "type": "reforge",
+          "reforge": "Plant Slime",
+          "price": 200,
+          "reputation": 0
+        },
+        "2": {
+          "question": "I need to prepare some money for that...",
+          "response": "Of course...",
+          "type": "rumor"
+        }
+      }
+    }
+  },
+  "Serge": {
+    "1": {
+      "question": "Who are you?",
+      "response": "Huh? Can't you see I'm busy here!",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "Hey, no really, who are you and what are you doing?",
+          "response": "Ugh...fine. I'm Serge - I used to be a monster hunter, but now I'm studying plant slimes in the forest. What do you want?!",
+          "type": "rumor"
+        },
+        "2": {
+          "question": "Ok, I won't bother you.",
+          "response": "Good!",
+          "type": "rumor"
+        }
+      }
+    },
+    "2": {
+      "question": "What's all this equipment?",
+      "response": "hmm? I need this alchemy equipment - the vials, beakers and burners - to study plant slimes.  Jeez, maintaining all of this is keeping me busy...",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "What are you trying to discover about plant slimes?",
+          "response": "Well..it's really about ALL slimes, but these plant ones are really friendly. If I can get enough slime cores...just maybe...wait - why do you want to know?!",
+          "type": "rumor"
+        },
+        "2": {
+          "question": "Ok...",
+          "response": "Bye...",
+          "type": "rumor"
+        }
+      }
+    },
+    "3": {
+      "question": "What can I do for you?",
+      "response": "Oh...well if you could bring me a Plant Slime Core, along with 10 Slime Drips, that would be great! I need more supplies for these experiments.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "Sure, I'll bring you 1 Plant Slime Core and 10 Slime Drips.",
+          "response": "Good! Get to work and out of my sight!",
+          "type": "accept_quest",
+          "accept_quest": "collect slime materials"
+        },
+        "2": {
+          "question": "I've got the 1 Plant Slime Core and the 10 Slime Drips you wanted!",
+          "response": "Ah perfect, I'll just put the core in this bag for later...heh heh heh \uD83D\uDE04 Here, you can take one of these plant slimes as a pet if you want, there are too many of them!",
+          "type": "finish_quest",
+          "finish_quest": "collect slime materials"
+        }
+      }
+    }
+  },
+  "Ben": {
+    "1": {
+      "question": "Who are you?",
+      "response": "I'm Ben, a tailor, I make hats, gloves, cloth, pants, belts, and shoes.",
+      "type": "rumor"
+    },
+    "2": {
+      "question": "Can I buy Cloth Armor from you?",
+      "response": "Sure, but you need to prepare 5 Rags as materials and pay me 50 gold.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I accept the price!",
+          "response": "As you wish!",
+          "type": "merchant",
+          "merchandise": "Cloth Armor",
+          "number": 1,
+          "price": 50,
+          "material": [
+            "Rag",
+            "Rag",
+            "Rag",
+            "Rag",
+            "Rag"
+          ]
+        },
+        "2": {
+          "question": "Seems I cannot afford it...",
+          "response": "Fine.",
+          "type": "rumor"
+        }
+      }
+    },
+    "3": {
+      "question": "Can I buy Cloth Hat from you?",
+      "response": "Sure, but you need to prepare 3 Rags as materials and pay me 50 gold.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I accept the price!",
+          "response": "As you wish!",
+          "type": "merchant",
+          "merchandise": "Cloth Hat",
+          "number": 1,
+          "price": 50,
+          "material": [
+            "Rag",
+            "Rag",
+            "Rag"
+          ]
+        },
+        "2": {
+          "question": "Seems I cannot afford it...",
+          "response": "Fine.",
+          "type": "rumor"
+        }
+      }
+    },
+    "4": {
+      "question": "Can I buy Cloth Gloves from you?",
+      "response": "Sure, but you need to prepare 3 Rags as materials and pay me 50 gold.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I accept the price!",
+          "response": "As you wish!",
+          "type": "merchant",
+          "merchandise": "Cloth Gloves",
+          "number": 1,
+          "price": 50,
+          "material": [
+            "Rag",
+            "Rag",
+            "Rag"
+          ]
+        },
+        "2": {
+          "question": "Seems I cannot afford it...",
+          "response": "Fine.",
+          "type": "rumor"
+        }
+      }
+    },
+    "5": {
+      "question": "Can I buy Cloth Pants from you?",
+      "response": "Sure, but you need to prepare 5 Rags as materials and pay me 50 gold.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I accept the price!",
+          "response": "As you wish!",
+          "type": "merchant",
+          "merchandise": "Cloth Pants",
+          "number": 1,
+          "price": 50,
+          "material": [
+            "Rag",
+            "Rag",
+            "Rag",
+            "Rag",
+            "Rag"
+          ]
+        },
+        "2": {
+          "question": "Seems I cannot afford it...",
+          "response": "Fine.",
+          "type": "rumor"
+        }
+      }
+    },
+    "6": {
+      "question": "Can I buy Cloth Shoes from you?",
+      "response": "Sure, but you need to prepare 3 Rags as materials and pay me 50 gold.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I accept the price!",
+          "response": "As you wish!",
+          "type": "merchant",
+          "merchandise": "Cloth Shoes",
+          "number": 1,
+          "price": 50,
+          "material": [
+            "Rag",
+            "Rag",
+            "Rag"
+          ]
+        },
+        "2": {
+          "question": "Seems I cannot afford it...",
+          "response": "Fine.",
+          "type": "rumor"
+        }
+      }
+    },
+    "7": {
+      "question": "Can I buy Cloth Belt from you?",
+      "response": "Sure, but you need to prepare 3 Rags as materials and pay me 100 gold.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I accept the price!",
+          "response": "As you wish!",
+          "type": "merchant",
+          "merchandise": "Cloth Belt",
+          "number": 1,
+          "price": 100,
+          "material": [
+            "Rag",
+            "Rag",
+            "Rag"
+          ]
+        },
+        "2": {
+          "question": "Seems I cannot afford it...",
+          "response": "Fine.",
+          "type": "rumor"
+        }
+      }
+    },
+    "8": {
+      "question": "Can I buy Cloth Cloak from you?",
+      "response": "Sure, but you need to prepare 7 Rags as materials and pay me 30 gold.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I accept the price!",
+          "response": "As you wish!",
+          "type": "merchant",
+          "merchandise": "Cloth Cloak",
+          "number": 1,
+          "price": 30,
+          "material": [
+            "Rag",
+            "Rag",
+            "Rag",
+            "Rag",
+            "Rag",
+            "Rag",
+            "Rag"
+          ]
+        },
+        "2": {
+          "question": "Seems I cannot afford it...",
+          "response": "Fine.",
+          "type": "rumor"
+        }
+      }
+    },
+    "9": {
+      "question": "Can you help me to personalize my Cloth Hat?",
+      "response": "I can, but you need to pay me 200 coins. Are you sure you want to do this?",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "Sure!",
+          "response": "Let me check...",
+          "type": "reforge",
+          "reforge": "Cloth Hat",
+          "price": 200,
+          "reputation": 0
+        },
+        "2": {
+          "question": "I need to prepare some money for that...",
+          "response": "Of course...",
+          "type": "rumor"
+        }
+      }
+    }
+  },
+  "Steward": {
+    "1": {
+      "question": "Who are you?",
+      "response": ".....Steward, land administrator.",
+      "type": "rumor"
+    },
+    "2": {
+      "question": "How can I get a land or a house?",
+      "response": "You have to own a manor. Chiania has a lot of ownerless manors and the king would like to lend and get some profits from these lands. If you want, I can make a contract for you. For now the price is 1000 CC, so you need to prepare enough funds.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "Sounds good! I want to make a contract! I have a plenty of funds and I want to buy a manor!",
+          "response": "Here is the contract!",
+          "type": "buy_manor",
+          "price": 1000
+        },
+        "2": {
+          "question": "I think I don't need a manor for now.",
+          "response": "Fine.",
+          "type": "rumor"
+        }
+      }
+    },
+    "3": {
+      "question": "Can you help me to prepare a licence for house construction?",
+      "response": "Sure, if you want, I can make a licence for you. For now the price is 600 CC, so you need to prepare enough funds.",
+      "type": "rumor",
+      "ask": {
+        "1": {
+          "question": "I want to construct my house!",
+          "response": "Here is the licence!",
+          "type": "nft_merchant",
+          "merchandise": "Seasons Home",
+          "price": 600
+        },
+        "2": {
+          "question": "Oh, 600 CC... I think I don't need a house for now.",
+          "response": "Fine.",
+          "type": "rumor"
+        }
+      }
+    }
+  }
+}

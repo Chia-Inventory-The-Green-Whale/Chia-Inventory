@@ -1,0 +1,388 @@
+{
+  "Underground Waterway": {
+    "length": 5,
+    "events": {
+      "You stepped on a loose stone!": {
+        "ability check": [
+          "dex",
+          "luc"
+        ],
+        "difficulty": 8,
+        "type": "decrease_stamina",
+        "value": 20,
+        "success_message": "but your luck and dexterity prevent you from twisting your ankle..."
+      },
+      "Your torch is distinguished!": {
+        "ability check": [
+          "luc"
+        ],
+        "difficulty": 13,
+        "type": "turn_off_light",
+        "success_message": "but you luckily found some matches and be able to light it again..."
+      },
+      "You encountered a group of hungry rats": {
+        "ability check": [
+          "luc"
+        ],
+        "difficulty": 11,
+        "type": "encounter_monster",
+        "encounter": [
+          "Black Mouse",
+          "Mouse"
+        ],
+        "success_message": "but the mouses did not notice you, maybe you are lucky?..."
+      },
+      "You encountered a thief": {
+        "ability check": [
+          "luc"
+        ],
+        "difficulty": 13,
+        "type": "encounter_monster",
+        "encounter": [
+          "Thief"
+        ],
+        "success_message": "but the thief did not notice you, maybe you are lucky?..."
+      },
+      "You found some trash left on the ground...": {
+        "ability check": [
+          "luc"
+        ],
+        "difficulty": 11,
+        "type": "get_coins",
+        "value": 3,
+        "success_message": "lucky you, there are some coins left in the trash"
+      }
+    },
+    "monsters": {
+      "boss": [
+        "Black Mouse",
+        "Black Mouse",
+        "Black Mouse",
+        "Thief",
+        "Giant Mouse"
+      ],
+      "number_min": 1,
+      "number_max": 5,
+      "type": [
+        "Cockroach",
+        "Mouse",
+        "Cockroach",
+        "Mouse",
+        "Cockroach",
+        "Mouse"
+      ]
+    },
+    "constructions": {
+      "number_min": 1,
+      "number_max": 2,
+      "type": {
+        "Down Staircase": {
+          "name": "Down Staircase",
+          "construction_type": "dungeon",
+          "enter": true,
+          "ability check": ["int", "luc", "wis"],
+          "difficulty": 11,
+          "listen": "You can hear noises from... unknown monsters...",
+          "smell": "Musty smell! not special here...",
+          "teleport": "Underground Waterway II",
+          "description": "This is an entrance of underground waterway II. You can !enter this construction.",
+          "icon": "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway15.jpg?raw=true"
+        },
+        "Broken Door": {
+          "name": "Broken Door",
+          "construction_type": "dungeon_door",
+          "enter": true,
+          "ability check": ["int", "luc", "wis"],
+          "difficulty": 9,
+          "listen": "You can hear noises from... cockroaches...",
+          "smell": "Musty smell! not special here...",
+          "teleport": "None",
+          "description": "A broken door.",
+          "icon": ""
+        },
+        "Wood Door": {
+          "name": "Wood Door",
+          "construction_type": "dungeon_door",
+          "enter": true,
+          "ability check": ["int", "luc", "wis"],
+          "difficulty": 11,
+          "listen": "You can hear noises from... mouses...",
+          "smell": "Musty smell! not special here...",
+          "teleport": "None",
+          "description": "A wood door.",
+          "icon": ""
+        },
+        "Stone Door": {
+          "name": "Stone Door",
+          "construction_type": "dungeon_door",
+          "enter": true,
+          "ability check": ["int", "luc", "wis"],
+          "difficulty": 11,
+          "listen": "You can hear noises from... a monster...not clear what it is...",
+          "smell": "Musty smell! not special here...",
+          "teleport": "None",
+          "description": "A stone door.",
+          "icon": ""
+        },
+        "Big Hole on Left Wall": {
+          "name": "Big Hole on Left Wall",
+          "construction_type": "dungeon_door",
+          "enter": true,
+          "ability check": ["int", "luc", "wis"],
+          "difficulty": 11,
+          "listen": "You can hear noises from... cockroaches...",
+          "smell": "Musty smell! not special here...",
+          "teleport": "None",
+          "description": "A big hole on the wall.",
+          "icon": ""
+        },
+        "Big Hole on Right Wall": {
+          "name": "Big Hole on Right Wall",
+          "construction_type": "dungeon_door",
+          "enter": true,
+          "ability check": ["int", "luc", "wis"],
+          "difficulty": 11,
+          "listen": "You can hear noises from... cockroaches...",
+          "smell": "Musty smell! not special here...",
+          "teleport": "None",
+          "description": "A big hole on the wall.",
+          "icon": ""
+        },
+        "Big Hole on the Ground": {
+          "name": "Big Hole on the Ground",
+          "construction_type": "dungeon_door",
+          "enter": true,
+          "ability check": ["int", "luc", "wis"],
+          "difficulty": 11,
+          "listen": "You can hear noises from... cockroaches...",
+          "smell": "Musty smell! not special here...",
+          "teleport": "None",
+          "description": "A big hole on the ground.",
+          "icon": ""
+        }
+      }
+    },
+    "ground": [
+      "Common Lootbox",
+      "Bone",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None"
+    ],
+    "treasure_box": [
+      "Common Lootbox"
+    ],
+    "paths": [
+      "crack in the wall",
+      "crack on the ground",
+      "crack on the roof",
+      "trapdoor",
+      "secret door in the wall"
+    ],
+    "description": "You are inside Underground Waterway",
+    "icon": [
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway1.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway2.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway3.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway4.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway5.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway6.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway7.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway8.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway9.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway10.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway11.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway12.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway13.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway14.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway15.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway16.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway17.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway18.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway19.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/undergroundwaterway20.jpg?raw=true"
+    ],
+    "name": "Underground Waterway",
+    "exit": "Kingdom Street"
+  },
+
+
+
+
+
+
+  "Underground Waterway II": {
+    "length": 5,
+    "events": {
+      "You stepped on a loose stone!": {
+        "ability check": [
+          "dex",
+          "luc"
+        ],
+        "difficulty": 8,
+        "type": "decrease_stamina",
+        "value": 20,
+        "success_message": "but your luck and dexterity prevent you from twisting your ankle..."
+      },
+      "Your torch is distinguished!": {
+        "ability check": [
+          "luc"
+        ],
+        "difficulty": 13,
+        "type": "turn_off_light",
+        "success_message": "but you luckily found some matches and be able to light it again..."
+      },
+      "You encountered a group of hungry rats": {
+        "ability check": [
+          "luc"
+        ],
+        "difficulty": 11,
+        "type": "encounter_monster",
+        "encounter": [
+          "Black Mouse",
+          "Mouse"
+        ],
+        "success_message": "but the mouses did not notice you, maybe you are lucky?..."
+      },
+      "You encountered a thief": {
+        "ability check": [
+          "luc"
+        ],
+        "difficulty": 13,
+        "type": "encounter_monster",
+        "encounter": [
+          "Thief"
+        ],
+        "success_message": "but the thief did not notice you, maybe you are lucky?..."
+      },
+      "You found some trash left on the ground...": {
+        "ability check": [
+          "luc"
+        ],
+        "difficulty": 11,
+        "type": "get_coins",
+        "value": 3,
+        "success_message": "lucky you, there are some coins left in the trash"
+      }
+    },
+    "monsters": {
+      "boss": [
+        "Black Mouse",
+        "Black Mouse",
+        "Black Mouse",
+        "Thief",
+        "Giant Mouse",
+        "Rat Man"
+      ],
+      "number_min": 1,
+      "number_max": 5,
+      "type": [
+        "Cockroach",
+        "Mouse",
+        "Cockroach",
+        "Mouse",
+        "Cockroach",
+        "Mouse"
+      ]
+    },
+    "constructions": {
+      "number_min": 1,
+      "number_max": 2,
+      "type": {
+        "Broken Door": {
+          "name": "Broken Door",
+          "construction_type": "dungeon_door",
+          "enter": true,
+          "teleport": "None",
+          "description": "A broken door.",
+          "icon": ""
+        },
+        "Wood Door": {
+          "name": "Wood Door",
+          "construction_type": "dungeon_door",
+          "enter": true,
+          "teleport": "None",
+          "description": "A wood door.",
+          "icon": ""
+        },
+        "Stone Door": {
+          "name": "Stone Door",
+          "construction_type": "dungeon_door",
+          "enter": true,
+          "teleport": "None",
+          "description": "A stone door.",
+          "icon": ""
+        },
+        "Big Hole on Left Wall": {
+          "name": "Big Hole on Left Wall",
+          "construction_type": "dungeon_door",
+          "enter": true,
+          "teleport": "None",
+          "description": "A big hole on the wall.",
+          "icon": ""
+        },
+        "Big Hole on Right Wall": {
+          "name": "Big Hole on Right Wall",
+          "construction_type": "dungeon_door",
+          "enter": true,
+          "teleport": "None",
+          "description": "A big hole on the wall.",
+          "icon": ""
+        },
+        "Big Hole on the Ground": {
+          "name": "Big Hole on the Ground",
+          "construction_type": "dungeon_door",
+          "enter": true,
+          "teleport": "None",
+          "description": "A big hole on the ground.",
+          "icon": ""
+        }
+      }
+    },
+    "ground": [
+      "Common Lootbox",
+      "Bone",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None",
+      "None"
+    ],
+    "treasure_box": [
+      "Common Lootbox"
+    ],
+    "paths": [
+      "crack in the wall",
+      "crack on the ground",
+      "crack on the roof",
+      "trapdoor",
+      "secret door in the wall"
+    ],
+    "description": "You are inside Underground Waterway",
+    "icon": [
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_1.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_2.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_3.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_4.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_5.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_6.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_7.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_8.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_9.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_10.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_11.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_12.jpg?raw=true",
+      "https://github.com/Chia-Inventory-The-Green-Whale/Chia-Inventory/blob/main/icons/abandonedwaterwayII_13.jpg?raw=true"
+    ],
+    "name": "Underground Waterway II",
+    "exit": "Kingdom Street"
+  }
+}
