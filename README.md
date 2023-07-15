@@ -1,6 +1,8 @@
 # Chia-Inventory
 
-not yet have a readme.....
+not really a readme.....
 
-just do venv of python and run main.py
+1. you need MongoDB
+
+2. just do venv of python and run main.py
 
